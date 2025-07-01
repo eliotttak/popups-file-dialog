@@ -1,1 +1,0 @@
-gcc -c ./lib/vendors/src/tinyfiledialog/tinyfiledialogs.c -o ./lib/vendors/src/tinyfiledialog/tinyfiledialogs.o && ar rcs ./lib/vendors/src/tinyfiledialog/libtinyfiledialogs.lib ./lib/vendors/src/tinyfiledialog/tinyfiledialogs.o &&
