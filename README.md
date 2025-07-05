@@ -36,6 +36,7 @@ View the documentation on [https://abdelrahman-tarek-0.github.io/popups-file-dia
   - [Demo](#demo)
   - [Installation](#installation)
   - [Change log](#change-log)
+    - [1.7.7](#177)
     - [1.7.3](#173)
     - [1.6.0](#160)
     - [1.5.1](#151)
@@ -99,6 +100,9 @@ cd popups-file-dialog
 ```
 
 ## <span id="change-log">Change log</span>
+
+### <span id="177">1.7.7</span>
+- Deprecated the `messageBox` method in favor of the new `dialogBox` method
 
 ### <span id="173">1.7.3</span>
 - Improved error handling with new custom error classes: `NoSelectedFileError`, `NoSelectedDirectoryError`, and `NoSavedFileError`
