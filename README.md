@@ -6,16 +6,16 @@
 [![NPM downloads][npm-downloads-image]][npm-downloads-url]
 [![MIT License][license-image]][license-url]
 
-_This is a simple file dialog library with 0 dependencies for Windows, Linux and macOS built on a C library called [tinyfiledialogs][tinyfiledialogs]._  
+_This is a simple file dialog library with 0 dependencies for Windows&reg;, Linux&reg; and macOS&reg; built on a C library called [tinyfiledialogs][tinyfiledialogs]._  
 _Since it is built in C, this library is really fast, unlike any Python-based library I have seen on NPM._
 
 Now listen, since Node.JS cannot natively open file dialogs,  I created the CLI version of [tinyfiledialogs][tinyfiledialogs]. After that, I built this library as a wrapper for it.  
 I did consider making the [tinyfiledialogs][tinyfiledialogs] library a node addon, but that would have been too much work.  
 So I went the easy way, and made the CLP version of the library.
 
-I recently built the lib for Windows and Linux.  
-I haven’t had the chance to download macOS and build the library for it yet.  
-So, if you have a computer running this OS and want to help me, feel free to contribute by compiling and testing the lib/vendors/src/cli.c on macOS.
+I recently built the lib for Windows&reg; and Linux&reg;.  
+I haven’t had the chance to download macOS&reg; and build the library for it yet.  
+So, if you have a computer running this OS and want to help me, feel free to contribute by compiling and testing the lib/vendors/src/cli.c on macOS&reg;.
 
 There’s still a lot of work to do, so feel free to contribute to this lib in general, I can really use some help.  
 I am not a pro in C, so I am sure there are a lot of bugs in this lib.
@@ -58,11 +58,11 @@ const fileDialog = require("popups-file-dialog");
   console.log(result);
 })();
 ```
-windows: 
+Windows 10&reg;: 
 
 <img alt="multiple select windows" src="./docs/mult-select-win.png" width="100%"/>
 
-linux: 
+Linux&reg;: 
 
 ![multiple select linux](./docs/mult-select-linux.png)
 
@@ -74,11 +74,11 @@ const result = await fileDialog.openDirectory({
     console.log(result);
 })();
 ```
-windows: 
+Windows 10&reg;: 
 
 ![select folder windows](./docs/directory-select-win.png)
 
-linux: 
+Linux&reg;: 
 
 ![select folder linux](./docs/directory-select-linux.png)
 
@@ -114,7 +114,7 @@ cd popups-file-dialog
 - some formatting and refactoring
 
 ### <span id="151">1.5.1</span>
-- add support for linux (finally)
+- add support for Linux&reg; (finally)
 - fixed some bugs (a lot of bugs)
 - added the openDirectory method to select a folder
 - some formatting and refactoring
@@ -212,7 +212,7 @@ const result = await fileDialog.openFile({
     console.log(result);
 
 ```
-image on windows 10:
+image on Windows 10&reg;:
 
 <img alt="multiple select windows" src="./docs/mult-select-win.png" width="100%"/>
 
@@ -249,7 +249,7 @@ const result5 = await fileDialog.saveFile({
    })
    console.log(result5)
 ```
-image on windows 10:
+image on Windows 10&reg;:
 
 <img alt="save file" src="./docs/save-file-win.png" width="100%" />
 
@@ -277,7 +277,7 @@ const result = await fileDialog.openDirectory({
     })
     console.log(result);
 ```
-image on windows 10:
+image on Windows 10&reg;:
 
 ![select folder](./docs/directory-select-win.png)
 
@@ -307,7 +307,7 @@ const result = await fileDialog.messageBox({
     })
     console.log(result);
 ```
-image on windows 10:
+image on Windows 10&reg;:
 
 ![message box](./docs/message-box-win.png)
 
@@ -360,6 +360,17 @@ no -> 0
 | dialogType | string | "ok" | dialog type of the dialog | "okCancel" | "ok", "okCancel", "yesNo", "yesNoCancel" |
 | iconType | string | "info" | icon type of the dialog | "info" | "info", "warning", "error","question" |
 | defaultSelected | string | "ok" | default selected of the dialog | "ok" | "ok", "cancel", "yes", "no" | -->
+
+## Credits
+Windows&reg;, Windows 10&reg; and all the user interface elements of Windows 10&reg; are registered trademarks of Microsoft Corporation.
+
+Linux&reg; is a registered trademark of the Linux Foundation.
+
+The user interface of Linux&reg; may be protected by copyrights and trademarks of the Linux Foundation and the GNOME Foundation.
+
+MacOs&reg; is a registered trademark of Apple Inc.
+
+This project is **not** affiliated with Microsoft Corporation, the Linux Foundation, the GNOME foundation or Apple Inc.
 
 ---
 
